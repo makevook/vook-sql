@@ -1,4 +1,4 @@
-NAME := $(shell date +'%Y%m%d%H%M%S')
+NAME ?= $(shell date +'%Y%m%d%H%M%S')
 
 .PHONY:create
 create:
