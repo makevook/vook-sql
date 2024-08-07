@@ -1,3 +1,5 @@
+BEGIN;
+
 # template_vocabulary
 INSERT INTO template_vocabulary (id, type) VALUES (1, 'DEVELOPMENT');
 INSERT INTO template_vocabulary (id, type) VALUES (2, 'MARKETING');
@@ -384,3 +386,5 @@ INSERT INTO template_term (id, term, meaning, synonym, template_vocabulary_id) V
 INSERT INTO template_term (id, term, meaning, synonym, template_vocabulary_id) VALUES (274, 'VP', '일반적으로 특정 분야(예: 엔지니어링, 마케팅, 영업)를 총괄하는 임원을 의미합니다.', 'Vice President', 4);
 INSERT INTO template_term (id, term, meaning, synonym, template_vocabulary_id) VALUES (275, 'WBR', '매주 정기적으로 진행되는 회의로, 팀 또는 회사의 주요 성과 지표(KPI)를 검토하고, 문제점을 파악하며, 개선 방안을 논의하는 자리입니다.', 'Weekly Business Review:,:주간 실적 분석', 4);
 INSERT INTO template_term (id, term, meaning, synonym, template_vocabulary_id) VALUES (276, 'WBS', '프로젝트의 전체 범위를 더 작고 관리 가능한 작업 단위로 분할하는 계층적인 구조를 의미합니다. 프로젝트의 목표를 달성하기 위해 필요한 모든 작업을 체계적으로 정리하고, 각 작업의 상호 관계를 시각적으로 보여주는 도구입니다.', 'Work Breakdown Structure:,:작업 명세 구조도', 4);
+
+COMMIT;

@@ -1,3 +1,5 @@
+BEGIN;
+
 create table if not exists demo_term
 (
     id         bigint auto_increment primary key COMMENT 'ID',
@@ -90,3 +92,5 @@ create table if not exists term
     updated_at    datetime(6)   null COMMENT '수정일시',
     constraint fk_term_vocabulary foreign key (vocabulary_id) references vocabulary (id)
 ) COMMENT '용어';
+
+COMMIT;

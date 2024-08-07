@@ -1,3 +1,5 @@
+BEGIN;
+
 # demo_term
 INSERT INTO demo_term (id, term, meaning, created_at, updated_at) VALUES (1, 'SDK', '특정 플랫폼이나 운영체재를 위한 앱을 만드는데 필요한 도구와 코드 모음 SDK는 앱 개발을 쉽고 빠르게 만드는 도구로 개발자가 처음부터 모든 것을 스스로 구축할 필요가 없어 시간과 노력을 절약할 수 있습니다. 예) 개발자가 지도를 앱에 추가하고 싶다면 구글 지도 SDK를 사용할 수 있습니다. 이 SDK에는 지도 표시, 사용자 위치 추적, 경로 검색 등의 기능을 위한 코드와 도구가 포함되어 있습니다.', '2024-07-23 03:34:50.014403', '2024-07-23 03:34:50.014403');
 INSERT INTO demo_term (id, term, meaning, created_at, updated_at) VALUES (2, 'API', '프로그램이 서로 통신하고 협력할 수 있는 필수적인 연결 도구 API는 크게 데이터 공유, 기능 활용, 시스템 통합의 역할을 수행합니다. 데이터 공유 : 다른 프로그램의 데이터를 제공합니다. 가령, 날씨 앱은 API로 기상청의 날씨 데이터를 가져올 수 있습니다. 기능 활용 : 다른 프로그램의 기능을 활용할 수 있도록 합니다. 가령, 음악 앱은 API로 스포티파이 등의 음악 스트리밍 서비스의 음악을 재생할 수 있습니다. 시스템 통합 : 서로 다른 시스템을 연결해 함께 작동하도록 합니다. 가령, 온라인 쇼핑몰은 API로 주문 처리, 결제 처리 및 배송 추적을 위한 다른 시스템과 통합할 수 있습니다.', '2024-07-23 03:34:50.043091', '2024-07-23 03:34:50.043091');
@@ -158,3 +160,4 @@ INSERT INTO demo_term_synonym (id, synonym, demo_term_id) VALUES (79, 'Native Ap
 INSERT INTO demo_term_synonym (id, synonym, demo_term_id) VALUES (80, 'Hibrid App', 74);
 INSERT INTO demo_term_synonym (id, synonym, demo_term_id) VALUES (81, 'Splash', 75);
 
+COMMIT;

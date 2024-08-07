@@ -1,1 +1,5 @@
+BEGIN;
+
 ALTER TABLE term MODIFY COLUMN synonym varchar(4000) NULL COMMENT '동의어';
+
+COMMIT;
